@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl, Button } from 'react-bootstrap';
 
 class Form extends Component {
     render () {
         return (
-            <form>
-                <FormGroup>
-                    <FormControl
-                    type="text"
-                    placeholder="Enter Location..."/>
-                    <FormControl.Feedback />
-                    <Button onClick={this.props.weatherForecast}>Search</Button>
-                </FormGroup>
-            </form>
+
+                <form onSubmit={this.props.weatherForecast}>
+                    <input type="text" name="city" placeholder="Enter City..."/>
+                    <input type="text" name="country" placeholder="Enter Country..."/>
+                    <button>Search</button>
+                </form>
             
         );
     }
