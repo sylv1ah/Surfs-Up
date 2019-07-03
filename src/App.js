@@ -1,18 +1,28 @@
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Background from "./components/Background.style";
-import Search from "./components/search/Search";
+
+//pages
+import Home from "./pages/Home";
+import Forecast from "./pages/Forecast";
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Background>
-          <Header />
-          <Search />
-        </Background>
-      </React.Fragment>
+      <Background>
+        <Header />
+        <Router>
+          <Route exact path="/" component={Home} />
+          <Route path="/forecast" component={Forecast} />
+        </Router>
+      </Background>
     );
   }
 }

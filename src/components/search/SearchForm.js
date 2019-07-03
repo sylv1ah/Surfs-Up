@@ -4,7 +4,7 @@ import { StyledSearch } from "./Search.style";
 import Button from "../button/Button";
 import InputBox from "../input-box/InputBox";
 
-const Search = () => {
+const SearchForm = () => {
   return (
     <StyledSearch>
       <InputBox placeholder="enter location" />
@@ -15,4 +15,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default SearchForm;
