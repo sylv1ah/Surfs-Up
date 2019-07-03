@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Background from "./components/Background.style";
@@ -18,10 +13,12 @@ class App extends Component {
     return (
       <Background>
         <Header />
-        <Router>
-          <Route exact path="/" component={Home} />
-          <Route path="/forecast" component={Forecast} />
-        </Router>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/forecast" component={Forecast} />
+          </Switch>
+        </BrowserRouter>
       </Background>
     );
   }

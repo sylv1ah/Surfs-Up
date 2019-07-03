@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
   width: 100vw;
-  height: 6vh;
+  height: 8vh;
   background-color: white;
   position: fixed;
   display: flex;
@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
 
 const StyledLogo = styled.img`
   width: auto;
-  height: 100%;
+  height: 6vh;
   margin: 1em;
 `;
 
