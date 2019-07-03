@@ -6,12 +6,13 @@ import StarClicked from "../../assets/starYellow.png";
 const Star = styled.button`
   background-image: url(${StarUnClicked});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 4em;
   height: 4em;
   margin: 0.5em;
   background-color: white;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-image: url(${StarClicked});
