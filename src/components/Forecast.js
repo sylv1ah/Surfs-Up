@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const forecast = () => {
-    return (
-        <div>Here's the forecast:</div>
-    );
+class Forecast extends Component {
+    render () {
+        return (
+            <div>
+               Temperature: {this.props.temperature}
+            </div>
+        );
+    }
+    
 }
 
-export default forecast;
+export default Forecast;
