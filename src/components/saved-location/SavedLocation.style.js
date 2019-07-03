@@ -8,21 +8,21 @@ const SavedLocationBox = styled.div`
   justify-content: space-between;
   margin: 1em;
   width: 90vw;
+  @media only screen and (min-width: 768px) {
+    width: 60vw;
+  }
 `;
 
 const Title = styled.div`
-  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  &:hover {
-    background-color: #24c2fc;
-  }
 `;
 
 const SubTitle = styled.div`
   font-size: 0.8em;
+  margin: 0.5em;
 `;
 
 const Star = styled.div`

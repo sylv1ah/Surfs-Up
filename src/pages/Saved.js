@@ -7,7 +7,16 @@ const Saved = () => {
   return (
     <PageFormat>
       your saved locations
-      <SavedLocation />
+      <SavedLocation
+        location="/forecast"
+        locationTitle="batu bolong beach"
+        locationSubTitle="canggu, bali"
+      />
+      <SavedLocation
+        location="/forecast"
+        locationTitle="fistral beach"
+        locationSubTitle="cornwall, uk"
+      />
     </PageFormat>
   );
 };

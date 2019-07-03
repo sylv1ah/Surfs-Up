@@ -13,4 +13,12 @@ const StyledButton = styled.button`
   cursor: pointer;
 `;
 
-export { StyledButton };
+const StyledBigButton = styled(StyledButton)`
+  font-size: 1.5em;
+  text-align: left;
+  margin: 0;
+  max-width: 70vw;
+  width: fit-content;
+`;
+
+export { StyledButton, StyledBigButton };

@@ -1,13 +1,17 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import { SavedLocationBox, Title, SubTitle, Star } from "./SavedLocation.style";
+import { BigButton } from "../button/Button";
 
-const SavedLocation = () => {
+const SavedLocation = props => {
   return (
     <SavedLocationBox>
       <Title>
-        batu bolong beach
-        <SubTitle>canggu, bali</SubTitle>
+        <Link to={props.location}>
+          <BigButton>{props.locationTitle}</BigButton>
+        </Link>
+        <SubTitle>{props.locationSubTitle}</SubTitle>
       </Title>
       <Star />
     </SavedLocationBox>
