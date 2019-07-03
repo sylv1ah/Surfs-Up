@@ -31,6 +31,8 @@ const Star = styled.div`
   background-size: contain;
   width: 2em;
   height: 2em;
+  min-height: 2em;
+  min-width: 2em;
   margin: 0.5em;
   background-color: white;
   border: none;

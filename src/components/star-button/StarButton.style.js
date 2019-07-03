@@ -9,6 +9,8 @@ const Star = styled.button`
   background-size: contain;
   width: 4em;
   height: 4em;
+  min-height: 4em;
+  min-width: 4em;
   margin: 0.5em;
   background-color: white;
   border: none;
