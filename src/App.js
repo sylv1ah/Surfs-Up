@@ -7,6 +7,7 @@ import Background from "./components/Background.style";
 //pages
 import Home from "./pages/Home";
 import Forecast from "./pages/Forecast";
+import Saved from "./pages/Saved";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/forecast" component={Forecast} />
+            <Route path="/saved" component={Saved} />
           </Switch>
         </BrowserRouter>
       </Background>
